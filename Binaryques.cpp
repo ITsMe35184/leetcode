@@ -2,18 +2,18 @@
 using namespace std; 
 
 
-void ro(int x){
+// void ro(int x){
          
-         int arr[1000]={0};
-        int count=10;
-         for(int i=1; i<x;i++ ){
-            arr[i]=count;
-            count++;
-         }
-        for(int i :arr){
-            cout<<i<<" ";
-        }
-}
+//          int arr[1000]={0};
+//         int count=10;
+//          for(int i=1; i<x;i++ ){
+//             arr[i]=count;
+//             count++;
+//          }
+//         for(int i :arr){
+//             cout<<i<<" ";
+//         }
+// }
  
  double acc(int number,int per,int n){
     double ans=number;
