@@ -1,6 +1,14 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+
+int search(string s,string t){
+  string temp= s+s;
+  
+     if(temp.find(t)==string::npos)return 0;
+    else return 1;
+}
+
 //  char flip(char except){
 //            if(except=='0')return '1';
 //             else return '0';
@@ -133,7 +141,10 @@ int main(){
      cout<<vaild_Anagram(str,str2); 
      // cout<<str;
          
-
+   string s="rohit";
+    string t="hitro";
+       
+   cout<< search(s,t);
 
 
 
