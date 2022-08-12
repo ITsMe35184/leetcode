@@ -14,7 +14,9 @@ public:
     }
 };
 
-// using freq array ---> o(n)  s.c-->O(1) as only 26 size ;
+// using freq array ---> o(n)  s.c-->O(1) as only 26 size ;   
+
+  
 
 class Solution {
 public:
@@ -24,8 +26,8 @@ public:
      
         int count[26]={0};
         for(int i=0;i<s.length();i++){
-            count[s[i]-'a']++;
-            count[t[i]-'a']--;
+            count[s[i]-'a']++;                  // ---->> ascii value se hum index find karte h ki kon sa char kon se index se mapp h
+            count[t[i]-'a']--;                 //  --->>>   a =97;   b=98 c= 99 ;  --->>>   a-a = 0 index se map h a ---> b-a 98-97 --->1 index se map h b 
         }
         for(int i=0;i<26;i++){
             if(count[i]!=0)return false;
